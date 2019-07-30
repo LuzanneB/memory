@@ -2,7 +2,10 @@ import React from "react";
 import "./style.css";
 
 function Title(props) {
-  return <h1 className="title">{props.children}</h1>;
-}
+  return ( 
+    <nav className="navbar navbar-dark bg-dark mb-2">
+    <span className="navbar-brand mb-0 h1">{props.children}</span>
+    </nav>
+   )}
 
 export default Title;
