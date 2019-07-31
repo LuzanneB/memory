@@ -2,73 +2,85 @@
   {
     "id": 1,
     "name":"Ross",
-    "image": "https://media.giphy.com/media/iHskdY9SMLFZuQ2u5c/giphy.gif"
+    "image": "https://media.giphy.com/media/iHskdY9SMLFZuQ2u5c/giphy.gif",
+    "clicked": false
 
   },
   {
     "id": 2,
     "name":"Monica",
-    "image": "https://media.giphy.com/media/eJoyqOKZTnMDZzd8t1/giphy.gif"
+    "image": "https://media.giphy.com/media/eJoyqOKZTnMDZzd8t1/giphy.gif",
+    "clicked": false
  
   },
   {
     "id": 3,
     "name":"Phoebe",
-    "image": "https://media.giphy.com/media/KfwBrhQEA52RpSXQ4U/giphy.gif"
+    "image": "https://media.giphy.com/media/KfwBrhQEA52RpSXQ4U/giphy.gif",
+    "clicked": false
  
   },
   {
     "id": 4,
     "name":"Joey",
-    "image": "https://media.giphy.com/media/dsQrzqmtwYnobTQBDW/giphy.gif"
+    "image": "https://media.giphy.com/media/dsQrzqmtwYnobTQBDW/giphy.gif",
+    "clicked": false
  
   },
   {
     "id": 5,
     "name":"Joey",
-    "image": "https://media.giphy.com/media/VhXKWqghv1kvbKBnwH/giphy.gif"
+    "image": "https://media.giphy.com/media/VhXKWqghv1kvbKBnwH/giphy.gif",
+    "clicked": false
  
   },
   {
     "id": 6,
     "name":"Phoebe",
-    "image": "https://media.giphy.com/media/JSvgjnJawWYqZJGsVU/giphy.gif"
+    "image": "https://media.giphy.com/media/JSvgjnJawWYqZJGsVU/giphy.gif",
+    "clicked": false
  
   },
   {
     "id": 7,
     "name":"Chandler",
-    "image": "https://media.giphy.com/media/gh5gV3uxTgFvDWcwHe/giphy.gif"
+    "image": "https://media.giphy.com/media/gh5gV3uxTgFvDWcwHe/giphy.gif",
+    "clicked": false
 
   },
   {
     "id": 8,
     "name":"Rachel",
-    "image": "https://media.giphy.com/media/Q8mFoPAxy0aBHE4Khp/giphy.gif"
+    "image": "https://media.giphy.com/media/Q8mFoPAxy0aBHE4Khp/giphy.gif",
+    "clicked": false
 
   },
   {
     "id": 9,
     "name":"Chandler",
-    "image": "https://media.giphy.com/media/d631TwECR94r9zlCB3/giphy.gif"
+    "image": "https://media.giphy.com/media/d631TwECR94r9zlCB3/giphy.gif",
+    "clicked": false
 
   },
   {
     "id": 10,
     "name":"Ross",
-    "image": "https://media.giphy.com/media/YnNGYBiYXedfeAwT8f/giphy.gif"
+    "image": "https://media.giphy.com/media/YnNGYBiYXedfeAwT8f/giphy.gif",
+    "clicked": false
 
   },
   {
     "id": 11,
     "name":"Monica",
-    "image": "https://media.giphy.com/media/frHfSFShRXOfor4GHR/giphy.gif"
+    "image": "https://media.giphy.com/media/frHfSFShRXOfor4GHR/giphy.gif",
+    "clicked": false
 
   },
   {
     "id": 12,
     "name":"Rachel",
-    "image": "https://media.giphy.com/media/eLiqVGrDAGRTdN5Tna/giphy.gif"
+    "image": "https://media.giphy.com/media/eLiqVGrDAGRTdN5Tna/giphy.gif",
+    "clicked": false
 
   }
 ]

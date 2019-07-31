@@ -22,13 +22,14 @@ class App extends Component {
       score:0,
     })
   }
-  
+
 // friend click event
 friendClick = event => {
 
   const currentFriend = event.target.id;
   // check to see if that friend has been clicked or not, are they in the state array or not?
   const isClicked = this.state.clicked.indexOf(currentFriend) > -1;
+  console.log("you clicked")
 
   // if that character is clicked, end the game, reset the score
   if (isClicked) {
