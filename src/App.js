@@ -7,30 +7,67 @@ import friends from "./friends.json";
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
-    friends
+    friends,
+    clicked:[],
+    score:0,
   };
 
-  removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
+  sortFriends = () => {
+    this.state.friends.sort( (a,b) => {return 0.5 - Math.random()});
   };
 
+  reset = () => {
+    this.setState({
+      clicked:[],
+      score:0,
+    })
+  }
+  
+// friend click event
+friendClick = event => {
+
+  const currentFriend = event.target.id;
+  // check to see if that friend has been clicked or not, are they in the state array or not?
+  const isClicked = this.state.clicked.indexOf(currentFriend) > -1;
+
+  // if that character is clicked, end the game, reset the score
+  if (isClicked) {
+    this.sortFriends();
+    this.reset();
+  } else {
+    // we have to update the score, sort the cards
+    this.sortFriends();
+    this.setState({
+      clicked: this.state.clicked.concat(currentFriend),
+      // increase the score
+      score: this.state.score + 1
+    },
+    //restart the game
+    () => {
+      if (this.state.score === 12) {
+        this.sortFriends();
+        this.reset();
+      }
+    });
+  }
+};
+
+
+
+
+
+  
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>
-        <Title>Friends List</Title>
+        <Title score={this.state.score} highscore={this.state.highscore}>Friends List</Title>
         {this.state.friends.map(friend => (
           <FriendCard
-            removeFriend={this.removeFriend}
             id={friend.id}
             key={friend.id}
             name={friend.name}
             image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
           />
         ))}
       </Wrapper>
